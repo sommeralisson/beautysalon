@@ -7,6 +7,7 @@
     <title>BeautySalon</title>
 
     <!-- STYLES -->
+    <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +17,20 @@
     />
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="scroll">
       <nav class="container">
         <a class="logo" href="#">Beauty<span>Salon.</span></a>
-        <div class="menu">...</div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Inicio</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -33,7 +44,7 @@
             />
           </div>
           <div class="text">
-            <h1>Saúde natural para os seus cabelos</h1>
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
             <p>
               Um salão exclusivo em São Paulo, especializado em tratamentos
               naturais.
@@ -45,10 +56,74 @@
 
       <div class="divider-1"></div>
 
-      <section class="section">
-        <div class="container">Outra section</div>
+      <div class="divider-2"></div>
+
+      <section class="section" id="about">
+        <div class="container grid"></div>
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+            alt="três mulheres sorrindo"
+          />
+        </div>
+        <div class="text">
+          <h2 class="title">Sobre nós</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo fuga
+            corrupti voluptatem optio. Totam enim recusandae optio eos maiores
+            quam ab reprehenderit voluptate culpa deserunt placeat, magnam
+            cupiditate libero nam!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            itaque magni quia non doloremque quos soluta quis illo cumque
+            pariatur aut facilis aliquid adipisci ab error, vero impedit maxime
+            quidem.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            maxime a sapiente veritatis perspiciatis quo repellat, quidem,
+            commodi ad doloribus doloremque saepe? Fuga, magni eius sequi non
+            vel pariatur corporis?
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>BeautySalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                corrupti.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
